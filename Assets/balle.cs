@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class balle : MonoBehaviour
 {
@@ -23,6 +24,11 @@ public class balle : MonoBehaviour
         if (collision.gameObject.tag == "Brique")
         {
             Destroy(collision.gameObject);
+            nbrBriques--;
+            if (nbrBriques <= 0)
+            {
+                SceneManager.LoadScene(0);
+            }
         }
     }
 } 

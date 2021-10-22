@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6690509685711248727}
   m_Layer: 0
   m_Name: brique
-  m_TagString: MainCamera
+  m_TagString: Brique
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
